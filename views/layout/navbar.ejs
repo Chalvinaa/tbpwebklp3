@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles specific to navbar */
+        .navbar {
+            background-color: #7AC3D3; /* Warna utama dari palet Anda */
+            color: #fff; /* Warna teks putih untuk kontras */
+            padding: 10px;
+        }
+        .navbar h3 {
+            margin: 0;
+            font-size: 1.5rem; /* Ukuran font yang sesuai */
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 10px;
+        }
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang saat hover */
+            border-radius: 4px; /* Efek sudut membulat */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar flex justify-between items-center">
+        <div class="logo ml-4">
+            <h3 class="text-white">Dosen Dashboard</h3>
+        </div>
+        <ul class="mr-4">
+            <li><a href="/dosen/home">Home</a></li>
+            <li><a href="/dosen/logbooks">Logbook</a></li>
+            <li><a href="/dosen/account">Account</a></li>
+        </ul>
+    </div>
+</body>
+</html>
